@@ -12,7 +12,7 @@ export default {
   
  methods:{
     send(){console.log('enter key가 눌러졌습니다.')},
-    keyPressed(e) {console.log(String.fromCharCode(e.keyCode)+' is pressed');},
+    keyPressed1(e) {console.log(String.fromCharCode(e.keyCode)+' is pressed');},
     keyPressed2(e, caption){console.log(caption+"("+(e.keyCode)+') is pressed')},
     }
   }

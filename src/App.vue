@@ -1,12 +1,13 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <Exercise msg="Welcome to Your Vue.js App"/>
+  <Exercise2 msg="Welcome to Your Vue.js App"/>
   <!-- <Exercise2 msg="Welcome to Your Vue.js App"/> -->
 </template>
 
 <script>
 // import Exercise from './components/Vue01_data.vue'
-// import Exercise from './components/Vue02_declaritive_rendering.vue'
+import Exercise2 from './components/Vue02_declaritive_rendering.vue'
 // import Exercise from './components/Vue03_vbind.vue'
 // import Exercise2 from './components/Vue03_vbind.vue'
 // import Exercise from './components/Vue04_vonce.vue'
@@ -25,7 +26,7 @@
 export default {
   name: 'App',
   components: {
-    Exercise, //Exercise2 //복수로 component 사용, 주석화 된거 확인
+    Exercise, Exercise2//Exercise2 //복수로 component 사용, 주석화 된거 확인
   }
 }
 </script>

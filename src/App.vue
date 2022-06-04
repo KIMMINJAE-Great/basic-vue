@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-<<<<<<< HEAD
+
   <h1>Vue 3 Exercise</h1>
   <hr>
   
@@ -35,35 +35,12 @@ import Exercise18 from "./components/Vue18_select_binding.vue"
 import Exercise19 from "./components/Vue19_form_element_join.vue"
 
 import Footer from "./components/Vue_Footer.vue"
-=======
-  <Exercise msg="Welcome to Your Vue.js App"/>
-  <Exercise2 msg="Welcome to Your Vue.js App"/>
-  <!-- <Exercise2 msg="Welcome to Your Vue.js App"/> -->
-</template>
 
-<script>
-// import Exercise from './components/Vue01_data.vue'
-import Exercise2 from './components/Vue02_declaritive_rendering.vue'
-// import Exercise from './components/Vue03_vbind.vue'
-// import Exercise2 from './components/Vue03_vbind.vue'
-// import Exercise from './components/Vue04_vonce.vue'
-// import Exercise from './components/Vue05_vshow.vue'
-// import Exercise from './components/Vue06_vif.vue'
-// import Exercise from './components/Vue07_vfor.vue'
-// import Exercise from './components/Vue08_von.vue'
-// import Exercise from './components/Vue08_von_keyEvent.vue'
-// import Exercise from './components/Vue09_von_event.vue'
-import Exercise from './components/Vue10_von_keyEvent.vue'
-// import Exercise from './components/Vue11_von_mouseEvent.vue'
-// import Exercise from './components/Vue10_von_keyEventTeacher.vue'
-// import Exercise from './components/Vue12_von_capture_self.vue'
-  // import Exercise from './components/Vue13_form_element.vue'
->>>>>>> d860caa83e1b0c1f63d1ea3199ed97c50a635f20
 
 export default {
   name: 'App',
   components: {
-<<<<<<< HEAD
+
   Exercise01, Exercise02,Exercise03, Exercise04,Exercise05, Exercise06,
     Exercise07, Exercise08,Exercise09, Exercise10,Exercise11, Exercise12,
     Exercise13, Exercise14, Exercise15, Exercise16,Exercise17,Exercise18,
@@ -82,9 +59,8 @@ export default {
       classCard:"card",
       classFooter:"footer",
     }
-=======
-    Exercise, Exercise2//Exercise2 //복수로 component 사용, 주석화 된거 확인
->>>>>>> d860caa83e1b0c1f63d1ea3199ed97c50a635f20
+
+
   }
 }
 </script>

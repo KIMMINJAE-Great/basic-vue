@@ -84,17 +84,34 @@ export default {
     join() {
       const frm = this.$refs.frm;
       const id = this.$refs.id;
-      const name = this.$refs.name;
-      const pass = this.$refs.pass;
-      const repass = this.$refs.repass;
-      const m1 = this.$refs.m1;
-      const m2 = this.$refs.m2;
-      const m3 = this.$refs.m3;
-      const mobile = this.$refs.mobile;
+      // const name = this.$refs.name;
+      // const pass = this.$refs.pass;
+      // const repass = this.$refs.repass;
+      // const m1 = this.$refs.m1;
+      // const m2 = this.$refs.m2;
+      // const m3 = this.$refs.m3;
+      // const mobile = this.$refs.mobile;
       const btnJoin = this.$refs.btnJoin;
+   
+      if(btnJoin.onlclick){
+        if(id=="" || id==undefined){
+          alert('ID(을)를 확인해주세요')
+          return
+        }
+
+        frm.submit
+
+   
+  } 
+   
+   },
+   
+
+   
+    
+   
     
     
-    },
 
     cancel() {
       const frm = this.$refs.frm;
@@ -102,10 +119,10 @@ export default {
       frm.reset();
       radioFemale.checked = true;
     },
-
+},
     
-  },
-};
+  }
+
 </script>
 
 <style>
@@ -161,5 +178,4 @@ fieldset div {
           return
         }
     } */
-
 </style>

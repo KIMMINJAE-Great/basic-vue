@@ -64,7 +64,7 @@
         <button ref="btnJoin" type="submit" @click.prevent="join" class="btn-margin">
           가입
         </button>
-        <button ref="btnCancel" @click="cancel">취소</button>
+        <button ref="btnCancel" @click.prevent="cancel">취소</button>
       </div>
     </fieldset>
   </form>
@@ -84,25 +84,51 @@ export default {
     join() {
       const frm = this.$refs.frm;
       const id = this.$refs.id;
-      // const name = this.$refs.name;
-      // const pass = this.$refs.pass;
-      // const repass = this.$refs.repass;
-      // const m1 = this.$refs.m1;
-      // const m2 = this.$refs.m2;
-      // const m3 = this.$refs.m3;
-      // const mobile = this.$refs.mobile;
-      const btnJoin = this.$refs.btnJoin;
-   
-      if(btnJoin.onlclick){
-        if(id=="" || id==undefined){
+      const name = this.$refs.name;
+      const pass = this.$refs.pass;
+      const repass = this.$refs.repass;
+      const m1 = this.$refs.m1;
+      const m2 = this.$refs.m2;
+      const m3 = this.$refs.m3;
+      const mobile = this.$refs.mobile;
+      
+        if(id.value =="" || id==undefined){
           alert('ID(을)를 확인해주세요')
           return
         }
+        if(name.value =="" || name==undefined){
+          alert('Name(을)를 확인해주세요')
+          return
+        }
+        if(pass.value =="" || pass==undefined){
+          alert('Password(을)를 확인해주세요')
+          return
+        }
+        if(pass.value !=repass.value ){
+          alert('비밀번호(을)를 재확인해주세요')
+          return
+        }
+        if(m1.value =="" || m1==undefined){
+          alert('전화번호 010(을)를 확인해주세요')
+          return
+        }
+        if(m2.value =="" || m2==undefined){
+          alert('전화번호 앞자리 (을)를 확인해주세요')
+          return
+        }
+        if(m3.value =="" || m3==undefined){
+          alert('전화번호 뒷자리 (을)를 확인해주세요')
+          return
+        }
+        if(mobile.value =="" || mobile==undefined){
+          alert('Mobile(을)를 확인해주세요')
+          return
+        }
 
-        frm.submit
+        
 
    
-  } 
+    frm.submit();
    
    },
    
@@ -114,10 +140,9 @@ export default {
     
 
     cancel() {
-      const frm = this.$refs.frm;
-      const radioFemale = this.$refs.여;
-      frm.reset();
-      radioFemale.checked = true;
+      this.$refs.frm.reset()
+      document.querySelector("#여").checked = true;//단순히 document의 값을 초기화, 해당  버튼의 아이디를 querySelector에#~~
+     
     },
 },
     
